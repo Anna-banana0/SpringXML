@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.springbasics.triangle.MakeTriangle" id="makeTriangle">
+        <constructor-arg ref="origin" typ/>
+        <constructor-arg ref="pointB"/>
+        <constructor-arg ref="pointC"/>
+    </bean>
+
+    <bean class="com.springbasics.triangle.MakePoint" id="origin">
+        <constructor-arg value="0"/>
+        <constructor-arg value="0"/>
+    </bean>
+    <bean class="com.springbasics.triangle.MakePoint" id="pointB">
+        <constructor-arg value="20"/>
+        <constructor-arg value="0"/>
+    </bean>
+    <bean class="com.springbasics.triangle.MakePoint" id="pointC">
+        <constructor-arg value="0"/>
+        <constructor-arg value="20"/>
+    </bean>
+
+</beans>
